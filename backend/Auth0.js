@@ -51,11 +51,10 @@ const createUser = async (token, payload) => {
     .catch(errorHandler);
 };
 
-const getUser = async (authorization) => {
-  console.log(authorization);
+const getUser = async (token) => {
   return axios
     .get(`${config.auth.domain}/userinfo`, {
-      headers: { Authorization: authorization },
+      headers: { Authorization: token },
     })
     .then(({ data }) => data)
     .catch(errorHandler);
