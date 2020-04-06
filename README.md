@@ -18,5 +18,7 @@ Simple Node.js and React using Auth0 as Authorization Server
 1) Enable the Social providers that you want on Auth0 Dashboard -> Connections -> Social. On the provider developers page, always configure the login page to Auth0 Application Login URI and Auth0 Allowed Callback URLs
 
 ### Running
-cd client && npm start
-cd backend && npm start
+```
+cd client && npm start && cd ../
+cd backend && npm start && cd ../
+```
